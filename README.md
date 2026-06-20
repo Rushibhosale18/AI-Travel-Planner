@@ -17,7 +17,7 @@ This project is built using a decoupled architecture for maximum scalability:
 - **Frontend:** Next.js (React), Tailwind CSS v3, Lucide Icons.
 - **Backend:** Node.js, Express.js.
 - **Database:** MongoDB (Mongoose ORM).
-- **AI Integration:** Google Generative AI SDK (`@google/generative-ai`).
+- **AI Integration:** Google Generative AI SDK (@google/generative-ai).
 
 ## 🚀 Getting Started
 
@@ -27,45 +27,44 @@ This project is built using a decoupled architecture for maximum scalability:
 - Google Gemini API Key
 
 ### 1. Clone the repository
-```bash
+bash
 git clone https://github.com/yourusername/ai-travel-planner.git
 cd ai-travel-planner
-```
+
 
 ### 2. Setup the Backend
 Open a terminal and navigate to the backend directory:
-```bash
+bash
 cd backend
 npm install
-```
 
-Create a `.env` file in the `backend` directory with the following variables:
-```env
+
+Create a .env file in the backend directory with the following variables:
+env
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
+MONGO_URI=mongodb+srv://rushibhosale1818_db_user:NW9UGiIRmIhhmtet@cluster0.hla5biy.mongodb.net/ai-travel-planner?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=super_secret_travel_key_999
 GEMINI_API_KEY=your_gemini_api_key
-```
+
 
 Start the backend server:
-```bash
+bash
 node index.js
-```
 
 ### 3. Setup the Frontend
 Open a new terminal and navigate to the frontend directory:
-```bash
+bash
 cd frontend
 npm install --legacy-peer-deps
-```
+
 
 Start the frontend development server:
-```bash
+bash
 npm run dev
-```
+
 
 ### 4. Explore
-Open your browser and navigate to `http://localhost:3000`. Create an account and start planning your next adventure!
+Open your browser and navigate to http://localhost:3000. Create an account and start planning your next adventure!
 
 ## 🧪 Engineering Decisions
 
