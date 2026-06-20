@@ -19,7 +19,7 @@ export default function TripView({ params }: { params: { id: string } }) {
       }
 
       try {
-        const res = await fetch(`http://localhost:5000/api/trips/${params.id}`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/trips/${params.id}`, {
           headers: { 'Authorization': `Bearer ${token}` }
         });
         
